@@ -18,6 +18,7 @@ def init_db():
     conn.commit()
     conn.close()
 
+
 # Vulnerable function with SQL Injection
 @app.route('/search', methods=['GET'])
 def search_users():
